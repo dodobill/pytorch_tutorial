@@ -1,6 +1,7 @@
 # pytorch_tutorial
-my first pytorch blog
-
-Hi Humans!
-
-I am going to learn pytorch myself.I've had some code and find them difficult to understand.
+## TORCH
+### Tensors
+1. torch.is_tensor(obj)
+>- 返回真，如果为tensor类型
+>1. 参数
+>- obejct类
