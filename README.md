@@ -11,7 +11,7 @@
     1. 参数
         - torch.dtype
     2. 例子
-        - ```python
+        ```python
         torch.tensor([1.2,3]).dtype
         torch.set_default_dtype(torch.float64)
         ```
