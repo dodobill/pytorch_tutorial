@@ -15,3 +15,19 @@
         torch.tensor([1.2,3]).dtype
         torch.set_default_dtype(torch.float64)
         ```
+3. torch.numel(input)
+    - 返回tensor中的元素个数
+4. torch.set_flush_denormal(mode)
+    - 是否将非正规浮点数归0
+5. torch.tensor()
+    - 当x是tensor类型，使用torch.tensor(x)等价于x.clone().detach()
+6. torch.sparse_coo_tensor()
+    - 构造COO稀疏矩阵
+    1. 参数
+        - indices 当前坐标对应的数值索引
+        - values 索引对应的值
+        - size 矩阵的大小
+7. torch.as_tensor()
+    - 避免复制
+8. torch.as_str   
+   
