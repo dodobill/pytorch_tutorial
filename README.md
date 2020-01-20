@@ -1,6 +1,6 @@
 # pytorch_tutorial
 ## TORCH
-### *Tensors
+### *Tensors*
 1. **torch.is_tensor(obj) -->is_storage, is_floating_point**
     - 返回真，如果为tensor类型
     1. 参数
@@ -58,7 +58,7 @@
 14. **torch.quantize_per_tensor() -->per_channel**
     - 离散化函数
 <br/> 
-### *indexing, slicing, joining, mutating ops
+### *indexing, slicing, joining, mutating ops*
 1. **torch.cat()**
     - 在某一维度将tensor拼接起来
 <br/>     
@@ -111,7 +111,7 @@
     - if condtion x else y
     - x,y结构相同
 <br/>     
-### *Generators
+### *Generators*
     
 
 
