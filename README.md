@@ -58,7 +58,7 @@
 14. **torch.quantize_per_tensor() -->per_channel**
     - 离散化函数
 
-### *indexing, slicing, joining, mutating ops*
+### *Indexing, slicing, joining, mutating ops*
 1. **torch.cat()**
     - 在某一维度将tensor拼接起来
  
@@ -112,15 +112,82 @@
     - x,y结构相同
      
 ### *Generators*
+1. **CLASS torch.\_C.Generator()**
+    - 记录算法状态，生成随机数
+    - 往往作为内置随机取样的参数
+
+### *Random sampling*
+1. **torch.normal(mean,std,size)**
+    - 生成正太分布的随机数
     
+2. **torch.rand() -->randint,...**
+    - 随机均值分布
+    
+3. **torch.randn()**
+    - 标准正态分布
 
+### *Quasi-random sampling*
+- 一种拟随机，低差异序列
 
+### *Parallelism*
+1. **torch.get_num_threads()**
+2. **torch.set_num_threads()**
 
+### *Local disabling gradient computation*
+torch.no_grad(), torch.set_grad_enabled()都是线程本地的，如果将任务传递至另一个任务，设置则会失效
 
+### *Math operations*
+1. **torch.add(input, other)**
+    - 将标量other加到张量input的每一个位置
+    
+2. **torch.addcdiv()**
+    - outi = inputi+value*(tensor1i/tensor2i)
+    
+3. **torch.addcmul()**
+    - outi = inputi+value*tensor1i*tensor2i
+    
+4. **torch.ceil()**
+    - 矩阵中比每个元素大的最小整数
+    
+5. **torch.clamp(input,min,max)**
+    - 将输入矩阵中每一个元素压缩到\[min, max]之间
+    
+6. **torch.div()**
+    - outi = inputi/other
 
+7. **torch.floor()**
+    - 小于元素的最大整数
+ 
+8. **torch.mul()**
+    - outi = inputi\*otheri / outi = inputi\*other
 
+9. **torch.reciprocal()**
+    - outi = 1/inputi
+    
+10. **torch.rsqrt()**
+    - 平方根取倒数
 
+11. **torch.argmax() -->argmin()**
+    - 返回指定维度最大值的下标
+    
+12. **torch.ge(input, other) -->gt, le, lt**
+    - 输入中每个元素是否大于等于other
 
+13. **torch.topk()**
+    - 返回k个最大值
+    
+14. **torch.mm()**
+    - 矩阵相乘
+    
+15. **torch.matmul()**    
+    - 适用于不同维度的矩阵运算
+    - 增加1个维度，运算结束后消除
+
+16. **torch.solve()**
+    - 解线性方程组
+    
+17. **torch.svd()**
+    - usv矩阵分解
 
 
 
