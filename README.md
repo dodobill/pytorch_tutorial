@@ -46,4 +46,26 @@
 10. **torch.zeros() -->ones**
     - 零矩阵
     
-11. 
+11. **torch.arange() -->range, linspace, logspace**
+    - 生成间隔数 [start,end)
+
+12. **torch.eye() -->empty, empty_like**
+    - 生成对角线全为1的矩阵
+
+13. **torch.full() -->full_like**
+    - 矩阵全是相同的值
+
+14. **torch.quantize_per_tensor() -->per_channel**
+    - 离散化函数
+
+###indexing, slicing, joining, mutating ops
+1. **torch.cat()**
+    - 在某一维度将tensor拼接起来
+    
+2. **torch.chunk()**
+    - 切分为多个块
+    
+3. **torch.index_select()**
+    - 从当前矩阵中选择元素
+    - 不共享
+   
