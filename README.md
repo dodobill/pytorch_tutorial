@@ -58,7 +58,7 @@
 14. **torch.quantize_per_tensor() -->per_channel**
     - 离散化函数
 
-###indexing, slicing, joining, mutating ops
+### indexing, slicing, joining, mutating ops
 1. **torch.cat()**
     - 在某一维度将tensor拼接起来
     
