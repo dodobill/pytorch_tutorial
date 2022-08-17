@@ -1,4 +1,4 @@
-# pytorch_tutorial updated
+# pytorch_tutorial after review
 ## TORCH
 ### *Tensors*
 1. **torch.is_tensor(obj) -->is_storage, is_floating_point**
